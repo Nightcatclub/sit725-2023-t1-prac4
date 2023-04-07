@@ -48,7 +48,7 @@ function insert(Monkey, callback) {
 }
 
 function getAllMonkeys(callback) {
-  dbCollection.find().toArray(Monkey, callback);
+  dbCollection.find().toArray(callback);
 }
 
 var port = process.env.port || 3000;
